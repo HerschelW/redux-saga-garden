@@ -7,7 +7,7 @@ An epic garden
 Before you get started, make sure you have the following software installed on your computer:
 
 - [Node.js](https://nodejs.org/en/)
-- [PostrgeSQL](https://www.postgresql.org/)
+- [PostgreSQL](https://www.postgresql.org/)
 - [Nodemon](https://nodemon.io/)
 
 ## Create database and table
@@ -36,25 +36,25 @@ VALUES ('Rose', 'Plantae', 'Angiosperms', 'Rosales', 'Rosaceae', 'Rosoideae', 'R
 
 ## Development Setup Instructions
 
-* Run `npm install`
-* Start postgres if not running already by using `brew services start postgresql`
-* Run `npm run server` to start the server
-* Run `npm run client` to start the client
-* Navigate to `localhost:3000`
+- Run `npm install`
+- Start postgres if not running already by using `brew services start postgresql`
+- Run `npm run server` to start the server
+- Run `npm run client` to start the client
+- Navigate to `localhost:3000`
 
 ## Lay of the Land
 
-* `src/` contains the React application
-* `public/` contains static assets for the client-side
-* `build/` after you build the project, contains the transpiled code from `src/` and `public/` that will be viewed on the production site
-* `server/` contains the Express App
+- `src/` contains the React application
+- `public/` contains static assets for the client-side
+- `build/` after you build the project, contains the transpiled code from `src/` and `public/` that will be viewed on the production site
+- `server/` contains the Express App
 
 ## Base Mode
 
-1. Add the `redux-logger` middleware to the project for debugging
+1. Add the `redux debugging extension` middleware to the project for debugging
 1. Add `redux-sagas` to the project to make an API request. The route `http://localhost:5000/api/plant` returns an array of plants. Display that array on the `Garden` component on load.
 1. Add all of the plant fields to the form to allow adding a new plant to the database. The server `post` route to do this is available at `http://localhost:5000/api/plant`.
-1. Add a `Delete` button for each plant to allow it to be removed from the database. The server `delete` route to do this is available at `http://localhost:5000/api/plant/1`,  for the plant with the `id` of `1`.
+1. Add a `Delete` button for each plant to allow it to be removed from the database. The server `delete` route to do this is available at `http://localhost:5000/api/plant/1`, for the plant with the `id` of `1`.
 
 ## Stretch Goals
 
@@ -62,7 +62,6 @@ VALUES ('Rose', 'Plantae', 'Angiosperms', 'Rosales', 'Rosaceae', 'Rosoideae', 'R
 1. Use `react-router` so that when a user navigates to `http://localhost:3000/#/plant/1` it displays the details for a given plant. The server `get` route to do this is available at `http://localhost:5000/api/plant/1`. Research [URL Parameters for React Router](https://reacttraining.com/react-router/web/example/url-params)
 1. On the new detail view, allow editing the details for that plant. After a user changes the values on the DOM, the user should be able to click `Save` to allow it to be updated in the database. The server `put` route to do this is available at `http://localhost:5000/api/plant` for the plant with the `id` of `1`.
 1. Make the individual plant page editable (use inputs) and add a `save` button for each plant to allow it to be edited in the database.
-
 
 ### Deployment
 
