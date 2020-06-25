@@ -1,8 +1,8 @@
-import React from 'react';
-import NewPlantForm from '../NewPlantForm/NewPlantForm';
-import PlantList from '../PlantList/PlantList';
+import React from "react";
+import NewPlantForm from "../NewPlantForm/NewPlantForm";
+import PlantList from "../PlantList/PlantList";
 
-const Garden = props => (
+const Garden = (props) => (
   <div>
     <h2>This is the garden!</h2>
     {/* Redux State isn't needed in the garden, it is just a parent component */}

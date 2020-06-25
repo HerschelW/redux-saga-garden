@@ -1,7 +1,7 @@
-import React from 'react';
-import Garden from './components/Garden/Garden';
+import React from "react";
+import Garden from "./components/Garden/Garden";
 
-import './App.css';
+import "./App.css";
 
 const App = () => (
   <div className="App">
